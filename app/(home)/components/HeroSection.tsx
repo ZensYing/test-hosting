@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function HeroSection() {
     return (
-        <div className="min-h-[60vh] flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-between max-sm:py-10">
+        <div className="min-h-[100vh] flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-between max-sm:py-10">
             <div className="space-y-10 text-center lg:text-left">
                 <h1 className="text-4xl lg:text-7xl font-bold">
                     Nice to meet you 👋<br /> {" "}
@@ -25,6 +25,7 @@ export default function HeroSection() {
                     </div>
                 </Link>
             </div>
+           
             <div className="">
                 <div className="w-72 h-72 space-y-3 -rotate-[30deg] relative z-10">
                     <div className="flex gap-3 translate-x-8">
@@ -36,7 +37,7 @@ export default function HeroSection() {
                         <div className="w-32 h-32 rounded-full bg-green-500"></div>
                     </div>
                 </div>
-                <div className="glow w-72 h-72 absolute lg:top-[40%] max-lg:top-[18%] ">
+                <div className="glow w-72 h-72 absolute lg:top-[50%] max-lg:top-[18%] ">
 
                 </div>
             </div>
