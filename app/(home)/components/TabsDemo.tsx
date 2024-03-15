@@ -58,8 +58,8 @@ export function TabsDemo() {
   ];
 
   return (
-    <div className="h-[70vh]  [perspective:1000px] relative   flex flex-col max-w-5xl mx-auto w-full  items-start justify-start lg:my-40 max-lg:my-40 max-sm:my-20">
-      <Tabs tabs={tabs} />
+    <div className="h-[70vh] fadeRight   [perspective:1000px] relative   flex flex-col max-w-5xl mx-auto w-full  items-start justify-start lg:my-40 max-lg:my-40 max-sm:my-20" data-aos="fade-right">
+      <Tabs tabs={tabs}  />
     </div>
   );
 }
@@ -85,7 +85,7 @@ const DummyContent = () => {
       alt="dummy image"
       width="1000"
       height="1000"
-      className="object-cover object-left-top h-[60%]  md:h-[90%] absolute lg:-bottom-10   inset-x-0 w-[90%] rounded-xl mx-auto"
+      className="object-cover object-left-top h-[60%]  md:h-[90%] absolute lg:-bottom-10   inset-x-0 w-[90%] rounded-xl mx-auto fadeUp" data-aos="fade-up"
     />
   );
 };

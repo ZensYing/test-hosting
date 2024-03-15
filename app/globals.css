@@ -33,6 +33,22 @@
 [data-aos="fade-left"] {
   animation: fadeLeft 2s ease forwards; /* Use the defined animation */
 }
+/* Define the fade-up animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Initial position, move down */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Final position, no translation */
+  }
+}
+
+/* Apply the animation to the element with data-aos="fade-up" */
+[data-aos="fade-up"] {
+  animation: fadeUp 3s ease forwards; /* Use the defined animation with a duration of 3 seconds */
+}
 
 @layer base {
   :root {
