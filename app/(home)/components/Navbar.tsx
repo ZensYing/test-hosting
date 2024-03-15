@@ -31,7 +31,7 @@ const socials = [
     }
 ]
 
-  return <nav className="py-10 flex justify-between items-center">
+  return <nav className="py-10 flex justify-between items-center sticky top-[0%] z-50">
     <h1 className="text-2xl font-bold underline underline-offset-8 decoration-green-800 -rotate-2"><a href="/">ZensYing 🌐</a></h1>
     <div className="flex items-center gap-5 max-sm:gap-2">
         {socials.map((social,index)=>{

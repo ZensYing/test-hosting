@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import React from 'react'
+import MyButton from './MyButton';
 
 export default function HeroSection() {
     return (
-        <div className="min-h-[100vh] flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-between max-sm:py-10">
-            <div className="space-y-10 text-center lg:text-left">
+        <div className="min-h-[100vh] flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-between max-sm:py-10 "  >
+            <div className="space-y-10 text-center lg:text-left fadeRight " data-aos="fade-right">
                 <h1 className="text-4xl lg:text-7xl font-bold">
                     Nice to meet you 👋<br /> {" "}
                     <span className="underline underline-offset-8 decoration-green-500">{"I'm Soratha."}</span>
@@ -25,8 +26,8 @@ export default function HeroSection() {
                     </div>
                 </Link>
             </div>
-           
-            <div className="">
+
+            <div className="relative fadeLeft" data-aos="fade-left">
                 <div className="w-72 h-72 space-y-3 -rotate-[30deg] relative z-10">
                     <div className="flex gap-3 translate-x-8">
                         <div className="w-32 h-32 rounded-2xl bg-green-500"></div>
@@ -37,10 +38,14 @@ export default function HeroSection() {
                         <div className="w-32 h-32 rounded-full bg-green-500"></div>
                     </div>
                 </div>
-                <div className="glow w-72 h-72 absolute lg:top-[50%] max-lg:top-[18%] ">
+                <div className="glow w-72 h-72 absolute lg:top-[10%] max-lg:top-[18%] ">
 
                 </div>
+                <div className=" absolute bottom-5 sm:bottom-14 left-0 z-20  ">
+                    <MyButton title="See More👨🏻‍💻"  />
+                </div>
             </div>
+
         </div>
     );
 }
